@@ -16,17 +16,26 @@ interface Props {
   initialVotes: number;
 }
 
+interface ReplyType {
+  id: number;
+  name: string;
+  company: string;
+  body: string;
+  timestamp: string;
+  votes: number;
+}
+
 const Comment: React.FC<Props> = ({ name, company, body, timestamp, initialVotes }) => {
   const [votes, setVotes] = useState(initialVotes);
   const [showReplies, setShowReplies] = useState(true);
-  const [replies, setReplies] = useState<any[]>([]);
+  const [replies, setReplies] = useState<ReplyType[]>([]);
   const [selectedUser, setSelectedUser] = useState(users[0]);
   const [newComment, setNewComment] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [editedBody, setEditedBody] = useState(body);
 
   const handleReplySubmit = (text: string) => {
-    const newReply = {
+    const newReply: ReplyType = {
       id: Date.now(),
       name: selectedUser.name,
       company: selectedUser.company.name,
