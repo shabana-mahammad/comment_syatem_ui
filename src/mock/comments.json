@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@techcorp.com",
+    "body": "This approach saved us hours of development time.",
+    "timestamp": "2025-09-18T12:46:08"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@innovate.io",
+    "body": "Highly recommended!",
+    "timestamp": "2025-09-18T12:40:00"
+  },
+  {
+    "id": 3,
+    "name": "Mike Chen",
+    "email": "mike.chen@webdev.co",
+    "body": "Outstanding documentation quality.",
+    "timestamp": "2025-09-18T12:30:00"
+  }
+]
